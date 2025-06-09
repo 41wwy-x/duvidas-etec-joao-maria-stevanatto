@@ -1,0 +1,154 @@
+body {
+    background-color: rgb(144, 22, 23);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container principal elegante */
+#principal {
+    max-width: 1200px;
+    background-color: #fff;
+    margin: 40px auto;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 40px 50px;
+}
+
+/* Botões estilosos */
+a {
+    color: rgb(144, 22, 23);
+    background-color: white;
+    border: 2px solid rgb(144, 22, 23);
+    border-radius: 12px;
+    text-decoration: none;
+    padding: 12px 24px;
+    margin: 10px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+a:hover {
+    background-color: rgb(144, 22, 23);
+    color: white;
+    transform: scale(1.04);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Iframe mais integrado */
+iframe {
+    border-radius: 16px;
+    width: 100%;
+    height: auto;
+    border: none;
+    margin-top: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Menu superior com destaque e bordas suaves */
+#menu {
+    background-color: rgb(114, 118, 120);
+    padding: 20px 0;
+    border-bottom: 4px solid rgb(144, 22, 23);
+    font-size: 18px;
+    border-radius: 0 0 16px 16px;
+}
+
+/* Conteúdo centralizado com boa leitura */
+#conteudo {
+    text-align: center;
+    margin: 50px 30px;
+}
+
+#conteudo h2 {
+    font-size: 30px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+#conteudo p {
+    font-size: 18px;
+    line-height: 1.75;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Rodapé com bordas suaves e tipografia leve */
+#rodape {
+    text-align: center;
+    background-color: black;
+    color: rgb(200, 200, 200);
+    padding: 25px 20px;
+    font-size: 15px;
+    margin-top: 60px;
+    border-top: 4px solid rgb(114, 118, 120);
+    border-radius: 16px 16px 0 0;
+}
+
+/* Subtítulos com leveza e margem espaçada */
+h3 {
+    font-size: 24px;
+    color: black;
+    text-align: left;
+    margin: 40px 30px 15px 30px;
+}
+
+/* Seções informativas bem distribuídas */
+#regras,
+#horarios,
+#cantina,
+#funci {
+    text-align: left;
+    margin: 15px 30px 30px 30px;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #222;
+}
+
+.card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+a {
+    position: relative;
+    overflow: hidden;
+}
+
+a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(144, 22, 23);
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: transform 0.4s ease;
+}
+
+a:hover::before {
+    transform: scale(1);
+}
